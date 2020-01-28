@@ -122,6 +122,7 @@ RUN curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-instal
 RUN echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> $HOME/.bashrc
 RUN echo 'eval "$(pyenv init -)"' >> $HOME/.bashrc
 RUN echo 'eval "$(pyenv virtualenv-init -)"' >> $HOME/.bashrc
+RUN echo "set-option -g update-environment \"SSH_ASKPASS SSH_AUTH_SOCK SSH_AGENT_PID SSH_CONNECTION WINDOWID XAUTHORITY\"" >> ~/.tmux.conf
 
 # set env variables manually, sometimes .bashrc is not used
 RUN eval "$(pyenv init -)"

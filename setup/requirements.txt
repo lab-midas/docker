@@ -1,8 +1,7 @@
 torch
 torchvision
-tensorflow-gpu
-tensorflow-probability
-tensorflow-addons
+tensorflow-gpu==2.0
+tensorflow-probability==0.8.0
 numpy 
 numba
 matplotlib 
