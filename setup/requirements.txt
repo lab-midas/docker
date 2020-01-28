@@ -1,6 +1,6 @@
 torch
 torchvision
-tensorflow-gpu==2.0
+tensorflow-gpu==2.0.1
 tensorflow-probability==0.8.0
 numpy 
 numba
